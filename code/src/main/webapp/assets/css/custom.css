@@ -1,0 +1,12 @@
+/*! Place your custom styles here */
+.hidden {
+    display: none;
+}
+
+blockquote {
+    font-size: 0.7em;
+}
+article .article__body p,
+article .article__body ul {
+    font-size:0.7em;
+}
