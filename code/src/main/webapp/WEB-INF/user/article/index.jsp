@@ -7,14 +7,17 @@
 <%@include file="../common/nav.jsp" %>
 <div class="main-container">
 
-    <%@include file="../common/banner.jsp"%>
+    <%@include file="../common/banner.jsp" %>
     <div id="totop-target"></div>
-    <%@include file="part.articles.simple.jsp"%>
+    <%@include file="part.articles.simple.jsp" %>
 </div>
-<%@include file="../common/totop.jsp"%>
+<%@include file="../common/totop.jsp" %>
 <%@include file="../common/paging.jsp" %>
+<div class="container">
+    <%@include file="../../admin/config/part.links.list.jsp" %>
+</div>
 <%@include file="../common/footer.jsp" %>
-<%@include file="../common/notification.jsp"%>
+<%@include file="../common/notification.jsp" %>
 <%@include file="../common/script.jsp" %>
 <% long date = new Date().getTime(); %>
 <script src="/assets/js/vue/vue.head.js?t=<%=date%>"></script>
@@ -24,6 +27,8 @@
 <script src="/assets/js/vue/vue.totop.js?t=<%=date%>"></script>
 <script src="/assets/js/vue/vue.paging.js?t=<%=date%>"></script>
 <script src="/assets/js/vue/vue.footer.js?t=<%=date%>"></script>
+<script src="/assets/js/vue/vue.component.link.js?t=<%=date%>"></script>
+<script src="/assets/js/vue/admin.links.js?t=<%=date%>"></script>
 <script src="/assets/js/vue/vue.notification.js?t=<%=date%>"></script>
 <script src="/assets/js/vue/vue.init.js?t=<%=date%>"></script>
 </body>

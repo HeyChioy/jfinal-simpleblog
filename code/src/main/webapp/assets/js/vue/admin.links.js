@@ -36,7 +36,11 @@
             }
         }
     });
-
+    window.BLOG = window.BLOG || {};
+    window.BLOG.links = links;
+    if(!document.querySelector("#linkEditor")){
+        return;
+    }
     const editor = new Vue({
         el: "#linkEditor"
         , data: {
@@ -74,6 +78,5 @@
         }
     });
     window.BLOG = window.BLOG || {};
-    window.BLOG.links = links;
     window.BLOG.editor = editor;
 })();

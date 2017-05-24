@@ -7,7 +7,7 @@
         , template: "<div class='col-sm-4 masonry__item'>\
                 <div class='card card-1 boxed boxed--sm boxed--border'>\
                 <div class='card__top'>\
-                <div style='cursor: pointer' class='card__avatar' ><span><strong>{{ title }}</strong></span></div>\
+                <div v-on:click='open(link)' style='cursor: pointer' class='card__avatar' ><span><strong>{{ title }}</strong></span></div>\
                 </div>\
                 \
                 <div class='card__body'><p> {{ summary }} </p></div>\
@@ -30,7 +30,7 @@
                 </div>"
         , methods: {
             open: function (link) {
-                BLOGUTILS.open(link);
+                window.open(link);
             }
             , edit: function (id) {
                 localStorage.setItem("link", id);
